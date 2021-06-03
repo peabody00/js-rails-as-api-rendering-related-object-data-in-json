@@ -6,6 +6,7 @@ class SightingsController < ApplicationController
         # With the models connected we could now use use a custom hash to access related data
         # render json: { id: sighting.id, bird: sighting.bird, location: sighting.location }
 
+        #include is a better way to show related models and data
         # render json: sighting, include: [:bird, :location]
 
         # With some error handling
